@@ -31,11 +31,10 @@ const char* password =  "";
 
 String dataIn;
 String imageFile = "";
-const String key = "mrRkmgf82kjrJNkVYjsfnxz";
+const String key = "mrRkmgf82kjrJNkVYjz";
 const String iddev = "20";
 String rfid = "";
-const String url = "http://absensi.xyz/api/absensifotojson";
-//const String url = "http://192.168.1.5/absensi/api/absensifotojson";
+const String url = "http://photo.xyz/api/";
 
 void setup()
 {
