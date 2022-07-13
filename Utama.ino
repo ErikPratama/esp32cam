@@ -28,7 +28,6 @@ const char* password =  "";
 #define PCLK_GPIO_NUM     22
 
 #define LED_Flash 4
-
 String dataIn;
 String imageFile = "";
 const String key = "mrRkmgf82kjrJNkVYjz";
@@ -119,8 +118,7 @@ void loop()
         HTTPClient http;   
      
         http.begin(url);
-        http.addHeader("Content-Type", "application/x-www-form-urlencoded");              //Specify content-type header
-     
+        http.addHeader("Content-Type", "application/x-www-form-urlencoded");              //Specify content-type heade
         int httpResponseCode = http.POST("key="+key+"&iddev="+iddev+"&rfid="+rfid+"&foto="+imageFile);
         
         Serial.println(rfid);   //Print RFID
